@@ -91,7 +91,7 @@ function alertPrize(indicatedSegment) {
   } else if (indicatedSegment.text == 'BANKRUPT') {
     alert('Oh no, you have gone BANKRUPT!');
   } else {       
-    var wonMoney = ("You have won " + indicatedSegment.text);
+   alert("You have won " + indicatedSegment.text);
     
     
   }
