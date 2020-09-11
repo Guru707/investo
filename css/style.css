@@ -1,0 +1,259 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+select{
+    outline:none;
+}
+input,button,textarea,button:focus,textarea:focus{
+    outline: none;
+}
+.equal-p{
+    padding:40px 0px;
+}
+.font-18{
+    font-size:18px;
+    margin-bottom: 0px;
+}
+.bg-default{
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.header_top{
+    background-color: rgb(255 255 255 / 10%);
+    padding: 20px 0px;
+}
+.top_head_block
+{
+    display: flex;
+}
+.text-primary{
+    color:#031e3b !important;
+}
+.mail-box span{
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    color: #2349a9;
+    display: inline-block;
+    vertical-align: middle;
+}
+.top_head{
+    display: flex;
+    margin-left: auto;
+}
+.top_head_block a{
+    font-size:12px;
+}
+.top_listing{
+    padding:0px 10px;
+}
+.top_listing a{
+    padding:10px 15px;
+    color:#fff;
+    font-size:10px;
+}
+.btn-shadow{
+    background: #2349a9;
+    box-shadow: 6px 6px 11px #1d3c8b, -6px -6px 11px #2854c1;
+}
+.brand-logo{
+    width:250px;
+}
+.img-reponsive{
+    max-width: 100%;
+}
+.navbar-main {
+    margin-top:30px;
+}
+.navbar-main ul li a{
+    color:#fff;
+}
+.hero_element{
+    background-image: url(../images/hero.jpg);
+    width: 100%;
+    padding-top:0em;
+    padding-bottom: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero_content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.hero_content-box h1{
+    font-size:70px;
+    font-weight: 800;
+}
+.hero_form{
+    background-color: #fff;
+    border-radius: 20px;
+    padding:25px;
+}
+.hero_form h4{
+    font-weight:600;
+}
+.form-box input,.form-box select,.form-box textarea{
+    border:none;
+    width:100%
+}
+.form-box{
+    border: 1px solid #b5bdc5;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 6px rgb(181 189 197 / 62%);
+}
+.btn-submit{
+    background-color: #031e3b;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    width: 150px;
+}
+.hero-btn-group{
+    position: absolute;
+    bottom: 0;
+}
+.btn-hero{
+    border:1px solid #fff;
+    padding:10px 20px;
+    margin-right: 10px;
+    position: relative;
+}
+.hero-btn-group:before{
+    content: '';
+    border-top: 3px solid #fff;
+    position: absolute;
+    top: -70px;
+    width: 115px;
+}
+.btn-hero-transparent{
+    border:1px solid #fff;
+    color:#fff;
+    padding:10px 20px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+}
+.btn-hero-transparent:hover{
+    background-color: #fff;
+}
+.bg-blue{
+    background-color: #031e3b;
+}
+.icon-wrap{
+    border-radius: 52px;
+    background: #031e3b;
+    box-shadow:  7px 7px 14px #010f1d, 
+                 -7px -7px 14px #052d59;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-wrap h4{
+    padding:30px 0px;
+    margin-bottom: 0px;
+    font-weight: 800;
+}
+.spin-box{
+    background-image: url(../images/graph.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0e2c4a;
+    height:100vh;
+    align-items: center;
+    display: flex;
+    background-size: contain;
+}
+.spin-content h2{
+    font-weight: 800;
+    font-size: 80px;
+}
+.spin-content h4{
+    font-weight: 300;
+    color:#fff;
+    font-size:42px;
+ 
+}
+.spin-wheel{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.spin-wheel figure{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    z-index: 9;
+}
+.spin-wheel figure img{
+    max-width:100%;
+}
+.spin-wheel figure:before{
+    content:'';
+    position: absolute;
+    left:0px;
+    right: 0px;
+    margin:0px auto;
+    background-image: url(../images/spin-cirlce-icon.png);
+    background-repeat: no-repeat;
+    width:75px;
+    height:75px;
+    background-size: contain;
+}
+.spin-wheel figure:after{
+    content:'';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+    box-shadow: inset 20px 19px 20px 19px rgb(0 0 0 / 42%), inset -20px -20px 38px 19px rgb(0 0 0 / 39%);
+    z-index: -1;
+    top: 15px;
+    left: 5px;
+}
+.btn-spin{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fa5a06+1,c80e00+100 */
+background: rgb(250,90,6); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(250,90,6,1) 1%, rgba(200,14,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(250,90,6,1) 1%,rgba(200,14,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(250,90,6,1) 1%,rgba(200,14,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa5a06', endColorstr='#c80e00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+color: #fff;
+border-radius: 35px;
+padding: 10px 20px;
+width: 150px;
+margin-top: 20px;
+text-transform: uppercase;
+font-weight: 700;
+}
