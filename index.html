@@ -48,11 +48,12 @@
                <a class="navbar-brand brand-logo" href="#"><img src="images/brand.png" class="img-responsive" /></a>
 
                <button class="navbar-toggler" type="button" id="toggle-btn">
-                  <i class="fas fa-bars"></i>
+                  <i class="fas fa-bars text-white"></i>
                </button>
                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                 
+               
                   <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                     
                      <li class="nav-item active">
                         <a class="nav-link" href="#">Why <span class="sr-only">(current)</span></a>
                      </li>
@@ -79,7 +80,8 @@
                
             </div>
             <div class="side-menu">
-               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+               <button class="btn cross p-0"><i class="fas fa-times text-white"></i></button>
+               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">                 
                   <li class="nav-item active">
                      <a class="nav-link" href="#">Why <span class="sr-only">(current)</span></a>
                   </li>
@@ -490,10 +492,23 @@
          verticalSwiping: true,
          aitForAnimate: true,
          autoplay: true,
+         responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        dots: false,
+      }
+    }
+    ]
       });
       $("#toggle-btn").click(function(){
          $(".side-menu").addClass("active");
+         $(".side-menu").addClass("active");
+         
 
+      });
+      $(".cross").click(function(){        
+         $(".side-menu").removeClass("active"); 
       });
    });
 </script>
