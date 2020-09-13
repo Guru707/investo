@@ -82,6 +82,10 @@ function playSound() {
   audio.play();
 }
 
+$(window).resize(function(){
+    $(".spin-wheel img").width($("canvas").width())
+});
+
 // Called when the animation has finished.
 function alertPrize(indicatedSegment) {
    
