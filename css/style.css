@@ -55,8 +55,16 @@ input,button,textarea,button:focus,textarea:focus{
 }
 .top_head_block
 {
-    display: flex;
-    align-items: center;
+    display: block;
+    text-align: center;
+}
+@media (min-width:767px){
+    .top_head_block
+    {
+        display: flex;
+        align-items: center;
+
+    }
 }
 .text-primary{
     color:#031e3b !important;
@@ -73,14 +81,26 @@ input,button,textarea,button:focus,textarea:focus{
     vertical-align: middle;
 }
 .top_head{
-    display: flex;
-    margin-left: auto;
+    display: block;
+}
+@media(min-width:767px){
+    .top_head{
+        display: flex;
+        margin-left: auto;
+    }
 }
 .top_head_block a{
     font-size:12px;
 }
 .top_listing{
-    padding:0px 10px;
+    padding:10px 10px;
+    display:inline-block;
+}
+@media(min-width:767px){
+    .top_listing{
+        padding:0px 10px;
+       
+    }
 }
 .top_listing a{
     padding:10px 15px;
@@ -97,8 +117,29 @@ input,button,textarea,button:focus,textarea:focus{
 .img-responsive{
     max-width: 100%;
 }
-.navbar-main {
-    margin:30px 0px;
+.side-menu{
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    top: 0;
+    background: #0f3469;
+    padding: 20px;
+    z-index:999;
+    width:90%;
+    display: none;
+    
+}
+.side-menu.active{
+    display: block;
+}
+
+.side-menu .navbar-nav {
+    display: inline-block ;
+}
+@media(min-width:767px){
+    .navbar-main {
+        margin:30px 0px;
+    }
 }
 .navbar-main ul li a{
     color:#fff;
@@ -116,10 +157,24 @@ input,button,textarea,button:focus,textarea:focus{
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    padding-bottom: 30px;
 }
 .hero_content-box h1{
-    font-size:70px;
+    font-size:28px;
     font-weight: 800;
+}
+.hero_content-box h4{
+    font-size: 1rem;
+    font-weight: 800;
+}
+@media(min-width:){
+    .hero_content-box h1{
+        font-size:70px;
+        font-weight: 800;
+    }
+    .hero_content-box h4{
+        font-size: 1.5rem;
+    }
 }
 .hero_form{
     background-color: #fff;
@@ -146,9 +201,11 @@ input,button,textarea,button:focus,textarea:focus{
     border: none;
     width: 150px;
 }
+@media(min-width:767px){
 .hero-btn-group{
     position: absolute;
     bottom: 0;
+}
 }
 .btn-hero{
     border:1px solid #fff;
@@ -156,12 +213,17 @@ input,button,textarea,button:focus,textarea:focus{
     margin-right: 10px;
     position: relative;
 }
+.hero-btn-group a{
+    margin:10px 10px;
+}
+@media(min-width:767px){
 .hero-btn-group:before{
     content: '';
     border-top: 3px solid #fff;
     position: absolute;
     top: -70px;
     width: 115px;
+}
 }
 .btn-hero-transparent{
     border:1px solid #fff;
@@ -201,33 +263,57 @@ input,button,textarea,button:focus,textarea:focus{
     background-repeat: no-repeat;
     background-position: center;
     background-color: #0e2c4a;
-    height:100vh;
-    align-items: center;
-    display: flex;
+   
     background-size: contain;
+}
+@media(min-width:767px){
+    .spin-box{
+        height:100vh;
+        align-items: center;
+        display: flex;
+    }
+}
+
+.spin-content{
+    margin-bottom:20px;
 }
 .spin-content h2{
     font-weight: 800;
-    font-size: 80px;
+    font-size: 36px;
+}
+@media(min-width:767px){
+    .spin-content h2{
+        font-weight: 800;
+        font-size: 50px;
+    }
+}
+@media(min-width:980px){
+    .spin-content h2{
+        font-weight: 800;
+        font-size: 80px;
+    }
 }
 .spin-content h4{
     font-weight: 300;
     color:#fff;
-    font-size:42px;
+    font-size:30px;
  
 }
+@media(min-width:767px){
+    .spin-content h4{    
+        font-size:42px;     
+    }
+}
 .spin-wheel{
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     text-align: center;
+    position: relative;
+    right:20px;
 }
 
 .spin-wheel figure{
     position: absolute;
-    width: 380px;
-    height: 380px;
+    width: 275px;
+    height: 275px;
     left: 0;
     right: 0;
     margin: 0px auto;
@@ -260,6 +346,19 @@ input,button,textarea,button:focus,textarea:focus{
     z-index: -1;
     top: 15px;
     left: 5px;
+}
+@media(min-width:767px){
+    .spin-wheel figure{
+        position: absolute;
+        width: 380px;
+        height: 380px;
+        left: 0;
+        right: 0;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        z-index: 9;
+    } 
 }
 .btn-spin{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fa5a06+1,c80e00+100 */
@@ -314,19 +413,24 @@ font-weight: 700;
     font-size:20px;
     margin:10px 0px 5px 0px;
 }
-.box-wrap-element:hover .box-wrap-block
+/* .box-wrap-element:hover .box-wrap-block
 {
     border-radius: 0px 0px 15px 15px;
     position: absolute;
     top: 0;
-}
+} */
 .box-wrap-element:hover .box-figure{
     transform: translatey(-65%);
     position: relative;
+    display: none;
 }
+.video-block{
+    padding-bottom: 30px;
+}
+
 .trade-box{
     background: black;
-    padding: 60px;
+    padding: 15px;
     border-radius: 15px;
     text-transform: uppercase;
     background-image: url(../images/app.png);
@@ -337,9 +441,14 @@ font-weight: 700;
     margin-top: 45px;
     
 }
+@media(min-width:767px){
+    .trade-box{
+        padding: 60px;
+    }
+}
 .trade-box-one{
     background: #192136;
-    padding: 40px;
+    padding: 15px;
     border-radius: 15px;
     text-transform: uppercase;
     background-image: url(../images/man.png);
@@ -349,25 +458,54 @@ font-weight: 700;
     position: relative;
     margin-top: 20px;
 }
+.trade-box-one h3{
+    font-size:24px;
+}
+.trade-box-one p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+@media(min-width:767px){
+    .trade-box-one{
+        padding: 60px;
+    }
+    h3{
+        font-size:28px;
+    }
+    p{
+        font-size:18px;
+    }
+    
+}
 .play-btn{
     
     border-radius: 100%;
     color: #121e33;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    right: 60px;
-    bottom: 30px;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
     border: none;
     font-size: 12px;
     transition: 0.5s ease-in-out;
     -moz-transition:0.5s ease-in-out;
     background-color: transparent;
     z-index: 9;
-    
+    margin-left:auto;
+    margin-top:10px;
+}
+@media(min-width:767px){
+    .play-btn{
+        position: absolute; 
+        right: 60px;
+        bottom: 30px;
+        width: 60px;
+    height: 60px;
+    }
 }
 .play-btn:before{
     content: '';
@@ -409,10 +547,17 @@ font-weight: 700;
    color:#fff;
 }
 
+
 .testimonial-block h3{
-    font-size: 44px;
+    font-size: 24px;
     font-weight: 800;
     margin-bottom: 40px;
+    text-align: center;
+}
+@media(min-width:767px){
+    .testimonial-block h3{
+        font-size: 44px;
+    }
 }
 .testimonial-box{
     background: #fff;
@@ -454,6 +599,7 @@ font-weight: 700;
     right: 0;
 
 }
+
 .testimonial-content img{
     max-width:100px;
     width:30px;
@@ -464,7 +610,7 @@ font-weight: 700;
 }
 .testimonial-block .slick-dots {
     width: auto;
-    right: -46px;
+    right: -35px;
     height: 100%;
     display: flex;
     top: 0;
@@ -527,6 +673,12 @@ font-weight: 700;
 .cashback-box h3{
     font-weight: 600;
     margin-bottom: 20px;
+    font-size:24px;
+}
+@media(min-width:767px){
+    .cashback-box h3{
+        font-size: 1.75rem;
+    }
 }
 .cashback-box p{
     color: rgb(245 245 245 / 48%);
@@ -594,4 +746,5 @@ box-shadow:  4px 4px 7px #031a32,
 }
 .footer-bottom p{
     font-size:14px;
+    padding:0px 20px;
 }

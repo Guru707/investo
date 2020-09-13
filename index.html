@@ -45,12 +45,13 @@
          </div>
          <nav class="navbar navbar-expand-lg navbar-main">
             <div class="container">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                  aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+               <a class="navbar-brand brand-logo" href="#"><img src="images/brand.png" class="img-responsive" /></a>
+
+               <button class="navbar-toggler" type="button" id="toggle-btn">
+                  <i class="fas fa-bars"></i>
                </button>
                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <a class="navbar-brand brand-logo" href="#"><img src="images/brand.png" class="img-responsive" /></a>
+                 
                   <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                      <li class="nav-item active">
                         <a class="nav-link" href="#">Why <span class="sr-only">(current)</span></a>
@@ -74,10 +75,36 @@
                         <a class="nav-link " href="#"> Contact us</a>
                      </li>
                   </ul>
-
                </div>
+               
+            </div>
+            <div class="side-menu">
+               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">Why <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Platform </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#">Account </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#">Partnership</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#">Education</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#">Download</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#"> Contact us</a>
+                  </li>
+               </ul>
             </div>
          </nav>
+
       </header>
       <div class="container">
          <div class="row">
@@ -178,7 +205,7 @@
                      <span class="d-block">Wheel</span>
                      Give Away</h2>
                   <h4>Win Surprise Gift</h4>
-                  <button class="btn btn-spin" id="spin_button" onClick="startSpin();">Spin Now</button>
+                  <button class="btn btn-spin d-none d-md-block" id="spin_button" onClick="startSpin();">Spin Now</button>
                </div>
             </div>
             <div class="col-md-6">
@@ -187,7 +214,9 @@
                   <canvas id='canvas' data-responsiveMinWidth="180" data-responsiveScaleHeight="true">
 
                   </canvas>
+                 
                </div>
+               <button class="btn btn-spin d-block d-sm-none" id="spin_button" onClick="startSpin();">Spin Now</button>
             </div>
          </div>
       </div>
@@ -195,7 +224,7 @@
    <section class="bg-blue equal-p">
       <div class="container">
          <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12 col-lg-8">
                <div class="video-block">
                   <p class="text-white">An industry trailblazer since 2014
                      <span class="d-block">Olymp Trade has many achievments to be proud of:</span></p>
@@ -219,7 +248,7 @@
                <div>
                </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12 col-lg-4">
                <div class="testimonial-block">
                   <h3 class="text-uppercase text-white">testimonial</h3>
                   <ul class="testimonial-box" id="slider-items">
@@ -336,12 +365,12 @@
          <div class="trad-block">
             <div class="container">
                <div class="row ">
-                  <div class="col-md-6">
+                  <div class="col-md-12 col-lg-6">
                      <figure>
                         <img src="images/banner-investo.png" class="img-responsive" />
                      </figure>
                   </div>
-                  <div class=" col-md-6">
+                  <div class=" col-md-12 col-lg-6">
                      <div class=" cashback-box bg-blue">
                         <h3 class="text-white">InvestmentCaptain <span class="d-block">Cashback</span></h3>
                         <div class="row">
@@ -379,13 +408,13 @@
    <footer class="bg-blue footer-element">
       <div class="container">
          <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
                <div class="footer-box">
                   <h4>Email Address</h4>
                   <a href="mailto:support@investotrade.net">support@investotrade.net</a>
                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
                <div class="footer-box">
                   <h4>Contact Us</h4>
                   <p>Address:
@@ -395,7 +424,7 @@
                   <p>Phone: <a href="tel:+441414162798">+441414162798</a></p>
                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
                <div class="footer-box">
                   <h4>Follow Us</h4>
                   <p class="social-icon-block">
@@ -406,7 +435,7 @@
                   </p>
                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
                <div class="footer-box d-flex">
                   <a href="#" class="follow-box text-white bg-red"><i class="fab fa-youtube"></i>220K <span
                         class="d-block">Youtube</span></a>
@@ -417,12 +446,12 @@
          </div>
       
       <div class="row pt-4 pb-4">
-         <div class="col-md-3">
-            <div class="footer-box">
+         <div class="col-md-4 col-lg-3">
+            <div class="footer-box pb-3">
                <img src="images/brand.png" alt="brand" class="img-responsive" />
             </div>
          </div>
-         <div class="col-md-9">
+         <div class="col-md-8 col-lg-9">
             <div class="footer-box">
                <p class="font-300">
                   Risk Warning: Investing in financial instruments as well as trading FOREX and other
@@ -461,6 +490,10 @@
          verticalSwiping: true,
          aitForAnimate: true,
          autoplay: true,
+      });
+      $("#toggle-btn").click(function(){
+         $(".side-menu").addClass("active");
+
       });
    });
 </script>
