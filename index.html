@@ -35,8 +35,9 @@
                           Language
                         </a>
                         <div class="dropdown-menu bg-blue" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">English</a>
-                          <a class="dropdown-item" href="#">French</a>                         
+                           <a href="#" class="english dropdown-item" data-lang="English">English</a>                             
+                          <a href="#" class="spanish dropdown-item" data-lang="Spanish">Spanish</a>
+                          <a href="#" class="german dropdown-item" data-lang="German">German</a>                    
                         </div>
                       </div></li>
                   </ul>
@@ -201,7 +202,7 @@
    <section class="spin-box equal-p">
       <div class="container">
          <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5 col-lg-6">
                <div class="spin-content">
                   <h2 class="text-white">Spin the
                      <span class="d-block">Wheel</span>
@@ -210,15 +211,15 @@
                   <button class="btn btn-spin d-none d-md-block" id="spin_button" onClick="startSpin();">Spin Now</button>
                </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7 col-lg-6">
                <div class="spin-wheel">
-                  <figure><img src="images/wheel_back1.png"></figure>
+                  
                   <canvas id='canvas' data-responsiveMinWidth="180" data-responsiveScaleHeight="true">
-
+                     
                   </canvas>
-                 
+                  <button class="btn btn-spin d-block d-md-none" id="spin_button" onClick="startSpin();">Spin Now</button>
                </div>
-               <button class="btn btn-spin d-block d-sm-none" id="spin_button" onClick="startSpin();">Spin Now</button>
+              
             </div>
          </div>
       </div>
@@ -470,13 +471,52 @@
             <p class="mb-0 text-white">&copy; Copyright 2019 Investo Trade . All Rights Reserved.</p>
       </div>
    </footer>
-</body>
+
+<!-- Use CSS to replace link text with flag icons -->
+<!-- <ul class="translation-links">
+   <li><a href="#" class="spanish" data-lang="Spanish">Spanish</a></li>
+   <li><a href="#" class="german" data-lang="German">German</a></li>
+ </ul> -->
+ 
+ <!-- Code provided by Google -->
+ <div id="google_translate_element"></div>
+ <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+   }
+ </script>
+ <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+ 
+ <style>.goog-te-banner-frame.skiptranslate {
+   display: none !important;
+   } 
+body {
+   top: 0px !important; 
+   }</style>
+
+ <!-- Flag click handler -->
+ <script type="text/javascript">
+ $(document).ready(function () {
+     $('.dropdown a').click(function() {
+       var lang = $(this).data('lang');
+       var $frame = $('.goog-te-menu-frame:first');
+       if (!$frame.size()) {
+         alert("Error: Could not find Google translate frame.");
+         return false;
+       }
+       $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
+       return false;
+     });
+   });
+ </script>
+
 <script src="js/font-awesome.js" crossorigin="anonymous"></script>
-<script src="js/jquery-min.js"></script>
+
 <script src="js/popper-min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/slick.js"></script>
-<script src="js/Winwheel.min.js"></script>
+<script src="js/Winwheel.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/custom.js"></script>
 
@@ -512,5 +552,5 @@
       });
    });
 </script>
-
+</body>
 </html>

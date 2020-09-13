@@ -1,15 +1,16 @@
+var spin_outer =document.getElementById(".spin-wheel");
 var canvas =document.getElementById("canvas");
-canvas.width = 385;
-canvas.height= 385;
+canvas.width = 410;
+canvas.height= 410;
 
 let theWheel = new Winwheel({
-  'outerRadius': 170, // Set outer radius so wheel fits inside the background.
-  'innerRadius': 20, // Make wheel hollow so segments dont go all way to center.
-  'textFontSize': 24, // Set default font size for the segments.
+  'outerRadius': 175, // Set outer radius so wheel fits inside the background.
+  'innerRadius': 30, // Make wheel hollow so segments dont go all way to center.
+  'textFontSize': 18, // Set default font size for the segments.
   'textFillStyle': '#ffffff',
   'textOrientation': 'vertical', // Make text vertial so goes down from the outside of wheel.
   'textAlignment': 'center', // Align text to outside of wheel.
-  'numSegments': 8, // Specify number of segments.
+  'numSegments': 6, // Specify number of segments.
   'responsive': true,
   'strokeStyle'       : '',
   'segments': // Define segments including colour and text.
@@ -17,40 +18,33 @@ let theWheel = new Winwheel({
     [ // font size and text colour overridden on backrupt segments.
       {
         'fillStyle': '#2eae74',
-        'text': '300'
+        'text': '$100'
       },
       {
         'fillStyle': '#39a0e8',
-        'text': '450'
-      },
-      {
-        'fillStyle': '#c93c77',
-        'text': '600'
-      },
-      {
-        'fillStyle': '#faa629',
-        'text': '750'
-      },
-      {
-        'fillStyle': '#f3f3e9',
-        'text': '500',
-        'textFillStyle': '#f7a429' 
+        'text': '$200'
       },
       {
         'fillStyle': '#2eae74',
-        'text': '300',
-        'textFontSize': 24,
+        'text': 'T-shirt',
         'textFillStyle': '#ffffff'
       },
       {
-        'fillStyle': '#e65051',
-        'text': '3000',
-        
+        'fillStyle': '#c93c77',
+        'text': 'Voucher'
       },
       {
         'fillStyle': '#faa629',
-        'text': '600'
+        'text': 'Phone'
       },
+      {
+        'fillStyle': '#f3f3e9',
+        'text': 'Better',
+        'textFillStyle': '#f7a429' 
+      },
+     
+     
+     
     ],
   'animation': // Specify the animation to use.
   {
@@ -68,6 +62,19 @@ let theWheel = new Winwheel({
     'outerRadius': 0,
   }
 });
+// Create new image object in memory.
+let loadedImg = new Image();
+
+// Create callback to execute once the image has finished loading.
+loadedImg.onload = function()
+{
+    theWheel.wheelImage = loadedImg;    // Make wheelImage equal the loaded image object.
+    theWheel.draw();                    // Also call draw function to render the wheel.
+}
+
+// Set the image source, once complete this will trigger the onLoad callback (above).
+loadedImg.src = "./images/wheel_back2.png";
+console.log(loadedImg.src);
 var wonMoney;
 // Loads the tick audio sound in to an audio object.
 let audio = new Audio('tick.mp3');
