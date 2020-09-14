@@ -181,15 +181,16 @@ input,button,textarea,button:focus,textarea:focus{
 }
 .hero_content-box h4{
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 400;
+    position: relative;
 }
 @media(min-width:767px){
     .hero_content-box h1{
-        font-size:70px;
+        font-size:64px;
         font-weight: 800;
     }
     .hero_content-box h4{
-        font-size: 1.5rem;
+        font-size: 20px;
     }
 }
 .hero_form{
@@ -233,11 +234,11 @@ input,button,textarea,button:focus,textarea:focus{
     margin:10px 10px;
 }
 @media(min-width:767px){
-.hero-btn-group:before{
+.hero_content-box h4:before{
     content: '';
     border-top: 3px solid #fff;
     position: absolute;
-    top: -70px;
+    bottom: -20px;
     width: 115px;
 }
 }
@@ -273,6 +274,7 @@ input,button,textarea,button:focus,textarea:focus{
     padding:30px 0px;
     margin-bottom: 0px;
     font-weight: 800;
+    font-size:20px;
 }
 .spin-box{
     background-image: url(../images/graph.jpg);
@@ -284,7 +286,6 @@ input,button,textarea,button:focus,textarea:focus{
 }
 @media(min-width:767px){
     .spin-box{
-        height:100vh;
         align-items: center;
         display: flex;
     }
@@ -436,6 +437,11 @@ font-weight: 700;
     transition:0.3s ease-in-out;
     -moz-transition:0.3s ease-in-out;
     -webkit-transition:0.3s ease-in-out;
+    height:240px;
+}
+.box-wrap-block a{
+    position: absolute;
+    bottom:10px;
 }
 .box-wrap-heading{
     font-weight:600;
@@ -468,8 +474,11 @@ font-weight: 700;
     background-size: contain;
     background-position: 75% bottom;
     position: relative;
-    margin-top: 45px;
+    margin-top: 20px;
     
+}
+.trade-box p{
+   font-size:10px;
 }
 @media(min-width:767px){
     .trade-box{
@@ -499,10 +508,10 @@ font-weight: 700;
     .trade-box-one{
         padding: 60px;
     }
-    h3{
+    .trade-box-one h3{
         font-size:28px;
     }
-    p{
+    .trade-box-one  p{
         font-size:18px;
     }
     
@@ -586,7 +595,10 @@ font-weight: 700;
 }
 @media(min-width:767px){
     .testimonial-block h3{
-        font-size: 44px;
+        font-size: 28px;
+    }
+    .slick-vertical .slick-slide{
+        height:415px;
     }
 }
 .testimonial-box{
@@ -792,3 +804,9 @@ box-shadow:  4px 4px 7px #031a32,
     position: relative;
     background-position: center;
 }
+
+#google_translate_element{
+	display:none !important;
+ }
+ .goog-te-banner-frame.skiptranslate {
+   display: none !important;
