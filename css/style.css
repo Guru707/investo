@@ -650,7 +650,7 @@ font-weight: 700;
 }
 @media(min-width:767px){
     .testimonial-block .slick-dots{
-        display: block;
+        display: flex !important;
     }
 }
 .testimonial-block .slick-dots li{
