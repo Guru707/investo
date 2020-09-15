@@ -1,118 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+   include 'header.php';
+?>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Investo</title>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
-      rel="stylesheet">
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link rel="stylesheet" href="css/slick.css">
-   <link rel="stylesheet" href="css/slick-theme.css">
-   <link rel="stylesheet" href="css/fancybox.css"> 
-   <link rel="stylesheet" href="css/icons.css">
-   <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body class="bg-blue">
    <section class="hero_element">
-      <header class="header-element mb-2">
-         <div class="header_top">
-            <div class="container">
-               <div class="top_head_block">
-                  <a href="mailto:support@investotrade.in" class="mail-box text-white"><span
-                        class="far fa-envelope"></span>support@investotrade.in</a>
-                  <ul class="top_head">
-                     <li class="top_listing"><a href="#" class="btn-shadow rounded-pill">OPEN LIVE ACCOUNT </a></li>
-                     <li class="top_listing"><a href="#" class="btn-shadow rounded-pill">OPEN DEMO ACCOUNT</a></li>
-                     <li class="top_listing"><a href="#" class="btn-shadow rounded-pill">CLIENT</a></li>
-                     <li class="top_listing"><a href="#" class="btn-shadow rounded-pill">BECOME AN AFFILIATE </a></li>
-                     <li class="top_listing"><a href="#" class="btn-shadow rounded-pill">BECOME A PARTNER</a></li>
-                     <li class="top_listing"><div class="dropdown">                        
-                        <a href="javascript:void()" class=" btn-shadow rounded-pill dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Language
-                        </a>
-                        <div class="dropdown-menu bg-blue" aria-labelledby="dropdownMenuButton">
-   
-                           <a href="#" class="english dropdown-item notranslate" data-lang="English">English</a>                             
-                          <a href="#" class="spanish dropdown-item notranslate" data-lang="Spanish">Spanish</a>
-                          <a href="#" class="german dropdown-item notranslate" data-lang="German">German</a>                    
-                        </div>
-                      </div>
-                    
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <nav class="navbar navbar-expand-lg navbar-main">
-            <div class="container">
-               <a class="navbar-brand brand-logo" href="#"><img src="images/brand.png" class="img-responsive" /></a>
-
-               <button class="navbar-toggler" type="button" id="toggle-btn">
-                  <i class="fas fa-bars text-white"></i>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-               
-                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                     
-                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Why Investo <span class="sr-only">(current)</span></a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trading Platform </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link " href="#">FX Trading </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link " href="#">Fx Education</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link " href="#">Contact Us </a>
-                     </li>
-                     <!-- <li class="nav-item">
-                        <a class="nav-link " href="#">Download</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link " href="#"> Contact us</a>
-                     </li> -->
-                  </ul>
-               </div>
-               
-            </div>
-            <div class="side-menu">
-               <button class="btn cross p-0"><i class="fas fa-times text-white"></i></button>
-               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">                 
-                  <li class="nav-item active">
-                     <a class="nav-link" href="#">Why <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Platform </a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Account </a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Partnership</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Education</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Download</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#"> Contact us</a>
-                  </li>
-               </ul>
-            </div>
-         </nav>
-
-      </header>
+      
       <div class="container">
          <div class="row">
             <div class="col-md-8">
@@ -133,21 +24,22 @@
                   <form action="">
                      <div class="form-group">
                         <div class="form-box">
-                           <span class="icon-form"></span><input type="text" placeholder="Name">
+                           <span class="icon-form"><i class="fas fa-user"></i></span><input type="text" placeholder="Name">
                         </div>
                      </div>
                      <div class="form-group">
                         <div class="form-box">
-                           <span class="icon-form"></span><input type="text" placeholder="Number">
+                           <span class="icon-form"><i class="fas fa-phone-alt"></i></span><input type="text" placeholder="Number">
                         </div>
                      </div>
                      <div class="form-group">
                         <div class="form-box">
-                           <span class="icon-form"></span><input type="text" placeholder="Email">
+                           <span class="icon-form"><i class="fas fa-envelope"></i></span><input type="text" placeholder="Email">
                         </div>
                      </div>
                      <div class="form-group">
                         <div class="form-box">
+                        <span class="icon-form"><i class="fas fa-map-marker-alt"></i></span>
                            <select name="" id="">
                               <option value="1">Delhi</option>
                               <option value="1">Chandigarh</option>
@@ -170,6 +62,41 @@
          </div>
       </div>
    </section>
+   <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "Nasdaq 100"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR/USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "BTC/USD"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "ETH/USD"
+    }
+  ],
+  "colorTheme": "light",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
    <section class="bg-blue pt-5 pb-5">
       <div class="container">
          <div class="row">
@@ -450,114 +377,6 @@
          </div>
       </div>
    </section>
-   <footer class="bg-blue footer-element">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-4 col-lg-3">
-               <div class="footer-box">
-                  <h4>Email Address</h4>
-                  <a href="mailto:support@investotrade.net">support@investotrade.net</a>
-               </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-               <div class="footer-box">
-                  <h4>Contact Us</h4>
-                  <p>Address:
-                     <span>71-75 Shelton Street Covent</span>
-                     Garden, London , UK, WC2H9JQ</p>
-
-                  <p>Phone: <a href="tel:+441414162798">+441414162798</a></p>
-               </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-               <div class="footer-box">
-                  <h4>Follow Us</h4>
-                  <p class="social-icon-block">
-                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                     <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                     <a href="#" class="social-icon"> <i class="fab fa-whatsapp"></i></a>
-                  </p>
-               </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-               <div class="footer-box d-flex">
-                  <a href="#" class="follow-box text-white bg-red"><i class="fab fa-youtube"></i>220K <span
-                        class="d-block">Youtube</span></a>
-                  <a href="#" class="follow-box text-white bg-light-blue"><i class="fab fa-facebook-square"></i>1M <span
-                        class="d-block">Facebook</span></a>
-               </div>
-            </div>
-         </div>
-      
-      <div class="row pt-4 pb-4">
-         <div class="col-md-4 col-lg-3">
-            <div class="footer-box pb-3">
-               <img src="images/brand.png" alt="brand" class="img-responsive" />
-            </div>
-         </div>
-         <div class="col-md-8 col-lg-9">
-            <div class="footer-box">
-               <p class="font-300">
-                  Risk Warning: Investing in financial instruments as well as trading FOREX and other
-                  leveraged derivatives involves a high degree of risk and may not be suitable to all investors.
-                  Trading such financial instruments can increase losses as well as gains on the relatively small
-                  movements of the underlying market. or its officials are not responsible for any losses,
-                  and before trading, one should consult an independent advisor or professional entity if necessary.
-                  For further information please refer to the Risk Warning that is available on our web site.</p>
-            </div>
-         </div>
-      </div>
-      </div>
-      <div class="footer-bottom text-center pt-4 pb-4">
-            <p class="mb-0 text-white">&copy; Copyright 2019 Investo Trade . All Rights Reserved.</p>
-      </div>
-   </footer>
-
-<!-- Use CSS to replace link text with flag icons -->
-<!-- <ul class="translation-links">
-   <li><a href="#" class="spanish" data-lang="Spanish">Spanish</a></li>
-   <li><a href="#" class="german" data-lang="German">German</a></li>
- </ul> -->
- 
- <!-- Code provided by Google -->
- <div id="google_translate_element"></div>
- <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
- <script src="js/fancybox.js"></script> 
- <script type="text/javascript">
-   function googleTranslateElementInit() {
-     new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
-   }
- </script>
- <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
- 
-
-
- <!-- Flag click handler -->
- 
-
-<script src="js/font-awesome.js" crossorigin="anonymous"></script>
-
-<script src="js/popper-min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/slick.js"></script>
-<script src="js/Winwheel.js"></script>
-<script src="js/TweenMax.min.js"></script>
-    
-<script src="js/custom.js"></script>
-<script type="text/javascript">
- $(document).ready(function () {
-     $('.dropdown a').click(function() {
-       var lang = $(this).data('lang');
-       var $frame = $('.goog-te-menu-frame:first');
-       if (!$frame.size()) {
-         alert("Error: Could not find Google translate frame.");
-         return false;
-       }
-       $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
-       return false;
-     });
-   });
- </script>
-</body>
-</html>
+<?php 
+   include'footer.php'
+?>
