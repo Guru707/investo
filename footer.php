@@ -48,12 +48,12 @@
                </div>
             </div>
             <div class="col-md-4 col-lg-3">
-               <div class="footer-box d-flex">
-                  <a href="#" class="follow-box text-white bg-red"><i class="fab fa-youtube"></i>220K <span
-                        class="d-block">Youtube</span></a>
-                  <a href="#" class="follow-box text-white bg-light-blue"><i class="fab fa-facebook-square"></i>1M <span
-                        class="d-block">Facebook</span></a>
-               </div>
+           
+               <div class="footer-box ">
+               <h4>Quick Link</h4>
+                  <p class="mb-1"><a href="#" class="text-white ">Terms And Condition</p>         
+                  <p><a href="#" class="text-white">Privacy Policy</a></p>          
+                </div>
             </div>
          </div>
       

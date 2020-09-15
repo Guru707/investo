@@ -8,7 +8,7 @@
    <div class="container-fluid">
       <div class="row">
          <div class="col-md-3">
-            <div class="product-image">
+            <div class="product-image mb-3">
                <img src="images/banner_inner.jpg" class="img-reponsive" />
             </div>
          </div>

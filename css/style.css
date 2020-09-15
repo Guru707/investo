@@ -9,7 +9,12 @@ a,a:hover,a:focus{
     text-decoration: none;
 }
 p{
+    font-size:14px;
+}
+@media(min-width:767px){
+p{
     font-size:16px;
+}
 }
 ul,li{
     list-style: none;
@@ -858,6 +863,14 @@ box-shadow:  4px 4px 7px #031a32,
    display: none !important;}
 .product-image img{
     max-width:100%;
+}
+.porduct-content h4{
+    font-size:18px;
+}
+@media(min-width:767px){
+    .porduct-content h4{
+        font-size:22px;
+    }
 }
 .inner-head-banner{
     height: 260px;
