@@ -40,9 +40,9 @@ function Winwheel(options, drawWheel)
         'numSegments'       : 1,            // The number of segments. Need at least one to draw.
         'drawMode'          : 'code',       // The draw mode. Possible values are 'code', 'image', 'segmentImage'. Default is code which means segments are drawn using canvas arc() function.
         'rotationAngle'     : 0,            // The angle of rotation of the wheel - 0 is 12 o'clock position.
-        'textFontFamily'    : 'Arial',      // Segment text font, you should use web safe fonts.
+        'textFontFamily'    : 'arial',      // Segment text font, you should use web safe fonts.
         'textFontSize'      : 20,           // Size of the segment text.
-        'textFontWeight'    : 'bold',       // Font weight.
+        'textFontWeight'    : '',       // Font weight.
         'textOrientation'   : 'horizontal', // Either horizontal, vertical, or curved.
         'textAlignment'     : 'center',     // Either center, inner, or outer.
         'textDirection'     : 'normal',     // Either normal or reversed. In normal mode for horizontal text in segment at 3 o'clock is correct way up, in reversed text at 9 o'clock segment is correct way up.
@@ -1116,7 +1116,7 @@ Winwheel.prototype.drawSegmentText = function()
 
                                 // If stoke style the stroke the text.
                                 if (fillStyle) {
-                                    this.ctx.fillText(lines[i], centerX + innerRadius + ((outerRadius - innerRadius) / 2) + margin, centerY + lineOffset);
+                                        this.ctx.fillText(lines[i], centerX + innerRadius + ((outerRadius - innerRadius) / 2) + margin, centerY + lineOffset + i*15);
                                 }
 
                                 // If fillstyle the fill the text.

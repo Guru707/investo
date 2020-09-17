@@ -9,6 +9,7 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
       rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/bootstrap.css">
    <link rel="stylesheet" href="css/slick.css">
    <link rel="stylesheet" href="css/slick-theme.css">
@@ -49,7 +50,7 @@
          </div>
          <nav class="navbar navbar-expand-lg navbar-main">
             <div class="container">
-               <a class="navbar-brand brand-logo" href="#"><img src="images/brand.png" class="img-responsive" /></a>
+               <a class="navbar-brand brand-logo" href="index.php"><img src="images/brand.png" class="img-responsive" /></a>
 
                <button class="navbar-toggler" type="button" id="toggle-btn">
                   <i class="fas fa-bars text-white"></i>
@@ -71,8 +72,9 @@
                         <a class="nav-link " href="#">Fx Education</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link " href="#">Contact Us </a>
+                        <a class="nav-link " href="contact_us.php">Contact Us </a>
                      </li>
+                    
                      <!-- <li class="nav-item">
                         <a class="nav-link " href="#">Download</a>
                      </li>
@@ -80,34 +82,45 @@
                         <a class="nav-link " href="#"> Contact us</a>
                      </li> -->
                   </ul>
+                  
                </div>
                
             </div>
             <div class="side-menu">
                <button class="btn cross p-0"><i class="fas fa-times text-white"></i></button>
                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">                 
-                  <li class="nav-item active">
-                     <a class="nav-link" href="#">Why <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Platform </a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Account </a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Partnership</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Education</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Download</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#"> Contact us</a>
-                  </li>
+               <li class="nav-item active">
+                        <a class="nav-link" href="#">Why Investo <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Trading Platform </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#">FX Trading </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="product_page.php">Fx Education</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="contact_us.php">Contact Us </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="contact_us.php">Open Live Account  </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="contact_us.php">Open Demo Account </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="contact_us.php">Client </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="contact_us.php">Become An Affiliate </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="contact_us.php">Become A Partner </a>
+                     </li>
                </ul>
+               
             </div>
          </nav>
 
