@@ -1,31 +1,38 @@
 var spin_outer =document.getElementById(".spin-wheel");
 var canvas =document.getElementById("canvas");
-canvas.width = 410;
-canvas.height= 420;
+canvas.width = 470;
+canvas.height= 470;
 
 let theWheel = new Winwheel({
-  'outerRadius': 175, // Set outer radius so wheel fits inside the background.
+  'outerRadius': 200, // Set outer radius so wheel fits inside the background.
   'innerRadius': 30, // Make wheel hollow so segments dont go all way to center.
-  'textFontSize': 18, // Set default font size for the segments.
+  'textFontSize': 16, // Set default font size for the segments.
   'textFillStyle': '#ffffff',
-  'textOrientation': 'vertical', // Make text vertial so goes down from the outside of wheel.
+  'textOrientation': 'horizontal', // Make text vertial so goes down from the outside of wheel.
   'textAlignment': 'center', // Align text to outside of wheel.
   'numSegments': 6, // Specify number of segments.
+  'textMargin':5,
   'responsive': true,
   'strokeStyle'       : '',
-  'drawMode'          : 'segmentImage', 
+  // 'drawMode'          : 'segmentImage', 
   'segments': // Define segments including colour and text.
   
     [ // font size and text colour overridden on backrupt segments.
-      [
-        {'image' : 'amazon.png',  'text' : 'Amazon Voucher'},
-        {'image' : 'android.png',   'text' : 'Android  Phone'},
-        {'image' : 'live200.png',  'text' : '$200 Live Account'},
-        {'image' : 'better.png',  'text' : 'Better  Luck Next  Time'},
-        {'image' : 'shirt.png', 'text' : 'Free T-Shirt and Cap'},
-        {'image' : 'live100.png', 'text' : '$100 Live Account'},
-        // {'image' : 'steve.png', 'text' : 'Steve'}
-     ]
+      
+        // {'image' : 'amazon.png',  'text' : 'Amazon Voucher'},
+        // {'image' : 'android.png',   'text' : 'Android  Phone'},
+        // {'image' : 'live200.png',  'text' : '$200 Live Account'},
+        // {'image' : 'better.png',  'text' : 'Better  Luck Next  Time'},
+        // {'image' : 'shirt.png',   'text' : 'Free T-Shirt and Cap'},
+        // {'image' : 'live100.png', 'text' : '$100 Live Account'},
+        {'fillStyle' : '#bbb522', 'text' : 'Better Luck'},
+                   {'fillStyle' : '#67bb0a', 'text' : 'Amazone Voucher '},
+                   {'fillStyle' : '#7de6ef', 'text' : 'Android Phone'},
+                   {'fillStyle' : '#e7706f', 'text' : '$200 Live Account'},
+                   {'fillStyle' : '#eae56f', 'text' : 'T-Shirt'},
+                   {'fillStyle' : '#89f26e', 'text' : '$100 Live Account'},
+// {'image' : 'steve.png', 'text' : 'Steve'}
+     
      
      
     ],
