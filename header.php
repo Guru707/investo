@@ -105,19 +105,19 @@
                         <a class="nav-link " href="contact_us.php">Contact Us </a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link " href="contact_us.php">Open Live Account  </a>
+                        <a class="nav-link " href="#">Open Live Account  </a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link " href="contact_us.php">Open Demo Account </a>
+                        <a class="nav-link " href="#">Open Demo Account </a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link " href="contact_us.php">Client </a>
+                        <a class="nav-link " href="#">Client </a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link " href="contact_us.php">Become An Affiliate </a>
+                        <a class="nav-link " href="#">Become An Affiliate </a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link " href="contact_us.php">Become A Partner </a>
+                        <a class="nav-link " href="#">Become A Partner </a>
                      </li>
                </ul>
                
