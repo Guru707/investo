@@ -40,7 +40,7 @@ function Winwheel(options, drawWheel)
         'numSegments'       : 1,            // The number of segments. Need at least one to draw.
         'drawMode'          : 'code',       // The draw mode. Possible values are 'code', 'image', 'segmentImage'. Default is code which means segments are drawn using canvas arc() function.
         'rotationAngle'     : 0,            // The angle of rotation of the wheel - 0 is 12 o'clock position.
-        'textFontFamily'    : 'arial',      // Segment text font, you should use web safe fonts.
+        'textFontFamily'    : 'Philosopher',      // Segment text font, you should use web safe fonts.
         'textFontSize'      : 20,           // Size of the segment text.
         'textFontWeight'    : '',       // Font weight.
         'textOrientation'   : 'horizontal', // Either horizontal, vertical, or curved.
@@ -1042,7 +1042,6 @@ Winwheel.prototype.drawSegmentText = function()
                                 // Increment the drawAngle by the angle per character so next loop we rotate
                                 // to the next angle required to draw the character at.
                                 drawAngle += anglePerChar;
-
                                 this.ctx.restore();
                             }
                         }

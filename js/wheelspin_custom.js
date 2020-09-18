@@ -6,10 +6,10 @@ canvas.height= 470;
 let theWheel = new Winwheel({
   'outerRadius': 200, // Set outer radius so wheel fits inside the background.
   'innerRadius': 30, // Make wheel hollow so segments dont go all way to center.
-  'textFontSize': 18, // Set default font size for the segments.
+  'textFontSize': 24, // Set default font size for the segments.
   'textFillStyle': '#ffffff',
   'textOrientation': 'curved', // Make text vertial so goes down from the outside of wheel.
-  'textAlignment': 'outer', // Align text to outside of wheel.
+  'textAlignment': 'center', // Align text to outside of wheel.
   'numSegments': 6, // Specify number of segments.
   'responsive': true,
   'lineWidth':3,
