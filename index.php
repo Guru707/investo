@@ -377,6 +377,64 @@
          </div>
       </div>
    </section>
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body">
+         <div class="hero_form">
+            <h4 class="text-primary text-center pop-heading">Congratulation You have Won Prize</h4>
+            <form action="">
+               <div class="form-group">
+                  <div class="form-box">
+                     <span class="icon-form"><i class="fas fa-user"></i></span><input type="text" placeholder="Name">
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="form-box">
+                     <span class="icon-form"><i class="fas fa-phone-alt"></i></span><input type="text" placeholder="Number">
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="form-box">
+                     <span class="icon-form"><i class="fas fa-envelope"></i></span><input type="text" placeholder="Email">
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="form-box">
+                  <span class="icon-form"><i class="fas fa-map-marker-alt"></i></span>
+                     <select name="" id="">
+                        <option value="1">Delhi</option>
+                        <option value="1">Chandigarh</option>
+                        <option value="1">Noida</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="form-box">
+                     <textarea name="" id="" placeholder="Message"></textarea>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <button type="submit" class="btn-submit rounded-pill">Submit</button>
+               </div>
+
+            </form>
+         </div>
+      </div>
+    </div>
+  </div
 <?php 
    include'footer.php'
 ?>
