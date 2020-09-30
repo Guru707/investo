@@ -11,11 +11,11 @@ a,a:hover,a:focus{
 p{
     font-size:14px;
 }
-@media(min-width:767px){
+/* @media(min-width:767px){
 p{
     font-size:16px;
 }
-}
+} */
 ul,li{
     list-style: none;
     padding: 0px;
@@ -65,6 +65,9 @@ input,button,textarea,button:focus,textarea:focus{
     display: flex;
     align-items: center;
 
+}
+.navbar-main ul.navbar-nav li a{
+    font-size: 14px;
 }
 @media (min-width:767px){
     .header_top{
@@ -144,13 +147,39 @@ input,button,textarea,button:focus,textarea:focus{
 .brand-logo{
     width:170px;
 }
-@media(min-width:767px){
+@media(min-width:767px){  
     .brand-logo{
-        width:250px;
-    } 
+        width:200px;
+    }
+    .nav-block:last-child{
+        padding-right: 0px;
+    }
 }
 .img-responsive{
     max-width: 100%;
+}
+.nav-block{
+    position: relative;
+    padding: 0px 5px;
+}
+
+.nav-block .dropdown-menu{
+    background:#2249a9;
+}
+@media(min-width:767px){
+       .nav-block:last-child{
+        padding-right: 0px;
+    }
+}
+.arrow-only::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    border-top: 10px solid white;
+    width: 10px;
+    top: 15px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 }
 .side-menu{
     position: fixed;
@@ -207,6 +236,16 @@ input,button,textarea,button:focus,textarea:focus{
     background-image: url(../images/header_inner.jpg);
     background-repeat: no-repeat;
 
+}
+.top_heading{
+    position: absolute;
+    width:100%;
+    bottom:15px;
+}
+.top_heading h1{
+    color:#fff;
+    font-weight: 600;
+    font-size: 36px;
 }
 .hero_element{
     background-image: url(../images/hero.jpg);
@@ -897,7 +936,7 @@ box-shadow:  4px 4px 7px #031a32,
     }
 }
 .inner-head-banner{
-    height: 260px;
+    height: 280px;
     overflow: hidden;
     position: relative;
 }
@@ -987,4 +1026,56 @@ color:#154baa;
 }
 .pop-heading{    
     font-family: Philosopher;
+}
+
+.container-small{
+    max-width:900px;
+    margin:0px auto;
+    padding: 0px 15px;
+}
+.content-image{
+    text-align:center;
+}
+.content-block{
+    margin:20px 0px;
+    text-align: center;
+}
+.content-block span{
+    display: block;
+}
+@media(min-width:767px){
+    .content-block{
+        margin:0px 0px;
+        text-align: left;
+    }
+    .content-image{
+        text-align:left;
+    }
+}
+.gold th{
+    color:#fff;
+}
+.partner_scheme h4
+{
+    font-size:30px;
+    margin:10px 0px;
+}
+.partner_scheme i{
+    font-size:52px;
+}
+.partner_support{
+    background-color:#03327c;
+}
+.partner_scheme h5{
+    font-size:18px;
+}
+.partner_support .icon-wrap{
+    border-radius: 150px;
+    background: #03327c;
+    box-shadow:  -13px -13px 26px #032b69, 
+                 13px 13px 26px #033a8f;
+    width:130px;
+    height:130px;
+    margin-bottom: 30px;
+    font-size:42px;
 }

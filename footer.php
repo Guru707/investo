@@ -89,8 +89,8 @@
  
  <!-- Code provided by Google -->
  <div id="google_translate_element"></div>
- <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
- <script src="js/fancybox.js"></script> 
+ <script src="js/jquery-2.1.4.js"></script>
+
  <script type="text/javascript">
    function googleTranslateElementInit() {
      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
@@ -101,10 +101,9 @@
 
 
  <!-- Flag click handler -->
- 
+  <script src="js/fancybox.js"></script> 
 
 <script src="js/font-awesome.js" crossorigin="anonymous"></script>
-
 <script src="js/popper-min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/slick.js"></script>

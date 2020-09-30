@@ -93,8 +93,8 @@ function alertPrize(indicatedSegment) {
   } else if (indicatedSegment.text == 'BANKRUPT') {
     alert('Oh no, you have gone BANKRUPT!');
   } else {       
-   alert("You have won " + indicatedSegment.text);
-    
+   $('#success_msg').html("You have won " + indicatedSegment.text);
+   $('#exampleModalLong').modal('toggle');
     
   }
 }

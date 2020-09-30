@@ -3,9 +3,6 @@
 ?>
 <section class="inner-head-banner">
    <img src="images/header_inner.jpg" alt="" />
-   <div class="top_heading">
-      <div class="container"><h1>Products</h1></div>
-      </div>
 </section>
 <section class="equal-p">
    <div class="container-fluid">
@@ -17,40 +14,18 @@
          </div>
          <div class="col-md-6">
             <div class="porduct-content">
-               <h4 class="text-blue font-600">Trade the world’s largest and most liquid markets</h4>
-               <p>Unlike forex only providers, allows our clients to gain exposure to multiple capital markets, thus
-                  allowing investors to develop a diverse portfolio from a single integrated account. Markets allows our
-                  clients to gain exposure to multiple capital markets, thus allowing investors to develop a diverse
-                  portfolio from a single integrated account.</p>
-               <h4 class="text-blue font-600">Invest in all global capital markets from a single integrated
-                  account</h4>
-               <ul class="inner_list">
-                  <li>Unlike forex only providers, allows our clients to gain exposure to multiple capital markets,
-                     thus allowing investors to develop a diverse portfolio from a single integrated account.</li>
-                  <li>This allows clients to diversify their investments as well as benefit from the ability to trade
-                     multiple strategies.</li>
-                  <li>This allows clients to diversify their investments as well as benefit from the ability to trade
-                     multiple strategies.</li>
-                  <li> <strong>Do not be left out</strong> </li>
-                  <li>In today’s world, in many instances FX prices directly affect the prices of metals such as gold
-                     and silver, and commodities such as US oil or cotton. Don’t be left out just trading just forex,
-                     open an account now.</li>
+               <h3 class="text-blue font-600 mb-4">Investo views the security of client's funds with the highest regard.</h3>
+         
+               <h4 class="text-blue font-600">Protection of client money</h4>
+               <p>By being regulated by the SVG government, clients get the assurance that they are protected under a world-leading jurisdiction. The SVG 'Client Assets Rules' require Optimum Standard International Group (SVG) Limited to segregate all funds on a daily basis and hold these funds in a separate account held at a bank approved by the SVG government. We will hold these funds as trustees. As a result the approved bank or any other creditor of Optimum Standard International Group (SVG) Limited will not be in a position to claim these funds in case of liquidation of Optimum Standard International Group (SVG) Limited.
+</p>
+<p>This also means that your funds and other assets will be segregated from Optimum Standard International Group (SVG) Limited's own money and will not be available to us for use in the course of our business. We may hold your money and the money of other clients in a pooled bank account. Hence, in the event of a default by the bank causing any unreconciled shortfall in the money held in the pooled account, then you may share proportionately in that shortfall. The company maintains operational and client bank accounts with reputable financial institutions. All funds, whether they are classified as company funds or client funds, are kept in the safest top-tier banks.
+</p>
+               <h4 class="text-blue font-600">Financial Services Compensation Scheme (FSCS)</h4>
+              <p>
+              All customers benefit from the SVG government scheme. Payments under the protected investment business scheme are limited to a maximum of $1,00,000.00 per customer. The Scheme is set up mainly to assist retail individuals, although smaller businesses are also covered.
 
-                  <li>has fast and direct automatic execution of all of its products benchmarked on the largest
-                     exchanges such as COMEX, NYMEX, and others.</li>
-               </ul>
-               <h4 class="text-blue font-600">Why FX</h4>
-               <ul class="inner_list">
-
-                  <li>FX is traded by all banks, central banks, global institutions, and is the fastest growing product
-                     for retail investors</li>
-
-                  <li>It’s the most liquid financial market in the world and is 30 times larger than any stock market.
-                  </li>
-                  <li>Over US$4 billion in daily turnover</li>
-                  <li>24/5 opening hour – Trade anytime, anywhere</li>
-
-               </ul>
+              </p>
             </div>
          </div>
          <div class="col-md-3">

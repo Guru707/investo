@@ -1,7 +1,58 @@
 <?php 
    include 'header.php';
 ?>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	  $("#post_mail").click(function(){
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var phone_no = $("#phone_no").val();
+		var message = $("#message").val();
+		var state = $("#state").val();
+		$('#box_shadow').show();
+		if(email!='' && name!='' && phone_no!=''){
+			$.post("mailscript.php", {name: name, email:email, phone_no:phone_no, message:message, state:state, posted_from:'home'}, function(result){
+			  $("#return_message").html(result);
+			  $("#name").val('')
+			  $("#email").val('')
+			  $("#phone_no").val('')
+			  $("#message").val('')
+			  $('#box_shadow').hide();
+			});
+		}else{
+			$('#box_shadow').hide();
+		}	
+	  });
+	  $("#post_mail_lounch").click(function(){
+		var name = $("#name_lounch").val();
+		var email = $("#email_lounch").val();
+		var phone_no = $("#phone_no_lounch").val();
+		var message = $("#message_lounch").val();
+		var state = $("#state_lounch").val();
+		$('#box_shadow').show();
+		if(email!='' && name!='' && phone_no!=''){
+			$.post("mailscript.php", {name: name, email:email, phone_no:phone_no, message:message, state:state, posted_from:'home'}, function(result){
+			  $("#return_message_lounch").html(result);
+			  $("#name_lounch").val('')
+			  $("#email_lounch").val('')
+			  $("#phone_no_lounch").val('')
+			  $("#message_lounch").val('')
+			  $('#box_shadow').hide();
+			});
+		}else{
+			$('#box_shadow').hide();
+		}	
+	  });
+	});
+		
+</script>
+<style>
+	#box_shadow{
+		top:0; bottom:0; left:0; right:0; position:fixed; z-index:10001; opacity:0.8; background-color:#000; text-align:center; size:26px; color:#fff; padding-top:10%;
+	}	
+</style>
+<div id="box_shadow" style="display:none"> Please Wait ....</div>
    <section class="hero_element">
       
       <div class="container">
@@ -21,26 +72,27 @@
             <div class="col-md-4">
                <div class="hero_form">
                   <h4 class="text-primary">Start Trading Now</h4>
-                  <form action="">
+				  <p id="return_message"></p>
+                  <form action="" method="post" onsubmit="return false">
                      <div class="form-group">
                         <div class="form-box">
-                           <span class="icon-form"><i class="fas fa-user"></i></span><input type="text" placeholder="Name">
+                           <span class="icon-form"><i class="fas fa-user"></i></span><input name="name" id="name" type="text" placeholder="Name" required>
                         </div>
                      </div>
                      <div class="form-group">
                         <div class="form-box">
-                           <span class="icon-form"><i class="fas fa-phone-alt"></i></span><input type="text" placeholder="Number">
+                           <span class="icon-form"><i class="fas fa-phone-alt"></i></span><input id="phone_no" name="phone_no" type="text" placeholder="Number" required>
                         </div>
                      </div>
                      <div class="form-group">
                         <div class="form-box">
-                           <span class="icon-form"><i class="fas fa-envelope"></i></span><input type="text" placeholder="Email">
+                           <span class="icon-form"><i class="fas fa-envelope"></i></span><input id="email" name="email" type="text" placeholder="Email" required>
                         </div>
                      </div>
                      <div class="form-group">
                         <div class="form-box">
                         <span class="icon-form"><i class="fas fa-map-marker-alt"></i></span>
-                           <select name="" id="">
+                           <select name="state" id="state" required>
                               <option value="1">Delhi</option>
                               <option value="1">Chandigarh</option>
                               <option value="1">Noida</option>
@@ -49,11 +101,11 @@
                      </div>
                      <div class="form-group">
                         <div class="form-box">
-                           <textarea name="" id="" placeholder="Message"></textarea>
+                           <textarea name="message" id="message" placeholder="Message" required></textarea>
                         </div>
                      </div>
                      <div class="form-group">
-                        <button type="submit" class="btn-submit rounded-pill">Submit</button>
+                        <button type="submit" id="post_mail" class="btn-submit rounded-pill">Submit</button>
                      </div>
 
                   </form>
@@ -378,9 +430,7 @@
       </div>
    </section>
    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Launch demo modal
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -394,27 +444,28 @@
       </div> -->
       <div class="modal-body">
          <div class="hero_form">
-            <h4 class="text-primary text-center pop-heading">Congratulation You have Won Prize</h4>
-            <form action="">
+            <h4 id="success_msg" class="text-primary text-center pop-heading">Congratulation You have Won Prize</h4>
+			<p id="return_message_lounch"></p>
+            <form action="" method="post" onsubmit="return false">
                <div class="form-group">
                   <div class="form-box">
-                     <span class="icon-form"><i class="fas fa-user"></i></span><input type="text" placeholder="Name">
+                     <span class="icon-form"><i class="fas fa-user"></i></span><input id="name_lounch" type="text" placeholder="Name" required>
                   </div>
                </div>
                <div class="form-group">
                   <div class="form-box">
-                     <span class="icon-form"><i class="fas fa-phone-alt"></i></span><input type="text" placeholder="Number">
+                     <span class="icon-form"><i class="fas fa-phone-alt"></i></span><input type="text" placeholder="Number" id="phone_no_lounch" required>
                   </div>
                </div>
                <div class="form-group">
                   <div class="form-box">
-                     <span class="icon-form"><i class="fas fa-envelope"></i></span><input type="text" placeholder="Email">
+                     <span class="icon-form"><i class="fas fa-envelope"></i></span><input type="text" placeholder="Email" id="email_lounch" required>
                   </div>
                </div>
                <div class="form-group">
                   <div class="form-box">
                   <span class="icon-form"><i class="fas fa-map-marker-alt"></i></span>
-                     <select name="" id="">
+                     <select name="" id="state_lounch" required>
                         <option value="1">Delhi</option>
                         <option value="1">Chandigarh</option>
                         <option value="1">Noida</option>
@@ -423,18 +474,19 @@
                </div>
                <div class="form-group">
                   <div class="form-box">
-                     <textarea name="" id="" placeholder="Message"></textarea>
+                     <textarea name="" id="message_lounch" placeholder="Message"></textarea>
                   </div>
                </div>
                <div class="form-group">
-                  <button type="submit" class="btn-submit rounded-pill">Submit</button>
+                  <button type="submit" id="post_mail_lounch" class="btn-submit rounded-pill">Submit</button>
                </div>
 
             </form>
          </div>
       </div>
     </div>
-  </div
+</div>
+</div>
 <?php 
    include'footer.php'
 ?>
