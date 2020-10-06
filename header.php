@@ -99,6 +99,10 @@
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="trading_principal.php">Trading Principles</a>
                         <a class="dropdown-item" href="forex_basics.php">Forex Basics</a>
+                        <a class="dropdown-item" href="different_forex.php">Different Forex Trading Strategies</a>
+                        <a class="dropdown-item" href="forex_strategy.php">What is Forex Trading Strategy?</a>
+                        <a class="dropdown-item" href="forex_best.php">Best Strategy for you</a>
+                        <a class="dropdown-item" href="market_hours.php">Market Hours</a>
                         <a class="dropdown-item" href="trading_process.php">Trading Process</a>
                         <a class="dropdown-item" href="images/invetotrade_Term_and_Conditions.pdf">Terms and Condition</a>
                      </div>
