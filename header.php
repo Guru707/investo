@@ -11,9 +11,11 @@
    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/bootstrap.css">
    <link rel="stylesheet" href="css/slick.css">
+   <link rel="stylesheet" href="css/jquery.expander.min.css">
    <link rel="stylesheet" href="css/slick-theme.css">
    <link rel="stylesheet" href="css/fancybox.css">
    <link rel="stylesheet" href="css/icons.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/stylesheet.css">
 
@@ -102,9 +104,10 @@
                         <a class="dropdown-item" href="different_forex.php">Different Forex Trading Strategies</a>
                         <a class="dropdown-item" href="forex_strategy.php">What is Forex Trading Strategy?</a>
                         <a class="dropdown-item" href="forex_best.php">Best Strategy for you</a>
+                        <a class="dropdown-item" href="glossary.php">Glossary</a>
                         <a class="dropdown-item" href="market_hours.php">Market Hours</a>
                         <a class="dropdown-item" href="trading_process.php">Trading Process</a>
-                        <a class="dropdown-item" href="images/invetotrade_Term_and_Conditions.pdf">Terms and Condition</a>
+                      
                      </div>
                   </li>
                   <li class="nav-item nav-block">

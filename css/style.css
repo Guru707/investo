@@ -7,6 +7,7 @@ body{
 }
 a,a:hover,a:focus{
     text-decoration: none;
+    outline: none;
 }
 p{
     font-size:14px;
@@ -162,7 +163,9 @@ input,button,textarea,button:focus,textarea:focus{
     position: relative;
     padding: 0px 5px;
 }
-
+.navbar-nav .nav-block:hover .dropdown-menu{
+    display:block !important;
+}
 .nav-block .dropdown-menu{
     background:#2249a9;
 }

@@ -108,6 +108,7 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/Winwheel.js"></script>
+<script src="js/jquery.expander.min.js"></script>    
 <script src="js/TweenMax.min.js"></script>    
 <script src="js/custom.js"></script>
 <script src="js/wheelspin_custom.js"></script>    
@@ -126,5 +127,10 @@
      });
    });
  </script>
+ <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
 </body>
 </html>

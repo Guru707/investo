@@ -36,6 +36,8 @@
              <li>Unique IB tracking link – Save time and effort by automatically referring clients to our website. You are not required to keep track of clients manually.</li>
 
             <li>IB Banners – Customized banners are available based on your needs with your specific referral link.   </li>
+            <li>Dedicated IB Account Manager – Always ready to support and assist you and your clients 24/5.</li>
+<li>Flexible conditions – We can tailor partnership plans to suit your mode of business.</li>
          </ul>
         </div>
               

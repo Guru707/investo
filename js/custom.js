@@ -52,3 +52,6 @@ $(function() {
 
 window.onscroll = function() {stickyFunction()};
 
+$('.navbar-main .nav-block').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
+});

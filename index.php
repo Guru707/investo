@@ -60,7 +60,7 @@
             <div class="col-md-8">
                <div class="hero_content-box">
                   <h1 class="text-white">Where you connect with Profit </h1>
-                  <h4 class="text-white">Traders in over 160 different continents have made
+                  <h4 class="text-white">
                      Get Daily Live Forex Signals, Currency trading & much more, with Investo Uni Trade
                      <span class="d-block pt-3">Trade & Earn the profits you desire!</span></h4>
                   <div class="hero-btn-group">
@@ -93,9 +93,9 @@
                         <div class="form-box">
                         <span class="icon-form"><i class="fas fa-map-marker-alt"></i></span>
                            <select name="state" id="state" required>
-                              <option value="1">Delhi</option>
-                              <option value="1">Chandigarh</option>
-                              <option value="1">Noida</option>
+                           <?php 
+                               include 'cities.php';
+                           ?>
                            </select>
                         </div>
                      </div>
@@ -257,32 +257,33 @@
                         </div>
                      </li>
                      <li class="slide-list ">
-                        <figure><img src="images/testi.png" alt=""></figure>
-                        <h5>Shilpi Aggarwal</h5>
+                     <figure><img src="images/testi_dummy.jpg" alt=""></figure>
+                        <h5>Amit Kapoor</h5>
                         <div class="testimonial-content"><span><img src="images/quots.png" alt=""></span>
-                           <p> The platform is so easy to use and works from any device of choice and such amazing customer service as well.</p><span><img src="images/quots-down.png"
+                           <p>   The platform is so easy to use and works from any device of choice and such amazing customer service as well. 
+</p><span><img src="images/quots-down.png"
                                  alt=""></span>
                         </div>
                      </li>
                      <li class="slide-list ">
-                        <figure><img src="images/testi.png" alt=""></figure>
-                        <h5>Shilpi Aggarwal</h5>
+                     <figure><img src="images/testi_dummy.jpg" alt=""></figure>
+                        <h5>Anna Mathew</h5>
                         <div class="testimonial-content"><span><img src="images/quots.png" alt=""></span>
                            <p> Investo provided me with a super easy deposit and withdrawal process with my money credited into my account in 24hrs which made trading easy for me. </p><span><img src="images/quots-down.png"
                                  alt=""></span>
                         </div>
                      </li>
                      <li class="slide-list ">
-                        <figure><img src="images/testi.png" alt=""></figure>
-                        <h5>Shilpi Aggarwal</h5>
+                     <figure><img src="images/testi_dummy.jpg" alt=""></figure>
+                        <h5>Manish Sharma</h5>
                         <div class="testimonial-content"><span><img src="images/quots.png" alt=""></span>
                            <p> Their trading platform is super easy to use and very intuitive with all the market indicators which I need for my trade. </p><span><img src="images/quots-down.png"
                                  alt=""></span>
                         </div>
                      </li>
                      <li class="slide-list ">
-                        <figure><img src="images/testi.png" alt=""></figure>
-                        <h5>Shilpi Aggarwal</h5>
+                     <figure><img src="images/testi_dummy.jpg" alt=""></figure>
+                        <h5> Paritosh Singh</h5>
                         <div class="testimonial-content"><span><img src="images/quots.png" alt=""></span>
                            <p> Their daily tips provided by them helped me increase my profits tenfold.
                            </p><span><img src="images/quots-down.png"
@@ -290,8 +291,8 @@
                         </div>
                      </li>
                      <li class="slide-list ">
-                        <figure><img src="images/testi.png" alt=""></figure>
-                        <h5>Shilpi Aggarwal</h5>
+                        <figure><img src="images/testi_dummy.jpg" alt=""></figure>
+                        <h5>Amar Verma</h5>
                         <div class="testimonial-content"><span><img src="images/quots.png" alt=""></span>
                            <p>  Investo has given me a great platform to earn. I invested $100 and earned $600 +.
                            </p><span><img src="images/quots-down.png"
@@ -361,8 +362,8 @@
                   <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                   <div class="box-wrap-block">
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
-                     <h4 class="box-wrap-heading mb-0">Free Forex Training</h4>
-                     <p>Get online forex training from experts. Learn to trade with ease from the comfort of your home</p>
+                     <h4 class="box-wrap-heading mb-0">Fast Withdrawal</h4>
+                     <p>Afraid of the Withdrawl process? Get fast & easy withdrawal from your trading account. Withdrawal within 24 hours.</p>
                      <a href="#"> Open Account <i class="fas fa-caret-right"></i></a>
                   </div>
                </div>
