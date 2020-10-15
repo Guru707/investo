@@ -1082,3 +1082,35 @@ color:#154baa;
     margin-bottom: 30px;
     font-size:42px;
 }
+.glossary-block h5
+{
+    padding: 20px 0px;
+    margin-bottom:0px;
+}
+.glossary-list{
+    border:1px solid #f9f9f9;
+    margin-bottom: 15px;
+}
+.glossary-list:last-child{
+    margin-bottom:0px;
+}
+.glossary-list .accordion__head{
+    background-color:#f9f9f9;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 0px;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+}
+.glossary-list .accordion__head i{
+    position: absolute;
+    right:10px;
+}
+.glossary-list.opened .accordion__head i{
+    transform: rotate(-180deg);
+}
+.glossary-list .accordion__body{
+    padding:10px;
+    background-color: #cbccce;
+}

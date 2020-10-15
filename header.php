@@ -15,8 +15,7 @@
    <link rel="stylesheet" href="css/slick-theme.css">
    <link rel="stylesheet" href="css/fancybox.css">
    <link rel="stylesheet" href="css/icons.css">
-   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-   <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/stylesheet.css">
 
 </head>
