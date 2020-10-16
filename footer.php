@@ -51,7 +51,7 @@
            
                <div class="footer-box ">
                <h4>Quick Link</h4>
-                  <p class="mb-1"><a href="#" class="text-white ">Terms And Condition</p>         
+                  <p class="mb-1"><a href="terms_condition.php" class="text-white ">Terms And Condition</p>         
                   <p><a href="#" class="text-white">Privacy Policy</a></p>          
                 </div>
             </div>
@@ -77,7 +77,7 @@
       </div>
       </div>
       <div class="footer-bottom text-center pt-4 pb-4">
-            <p class="mb-0 text-white">&copy; Copyright 2019 Investo Trade . All Rights Reserved.</p>
+            <p class="mb-0 text-white">&copy; CopyRight 2016 Investo Uni Trade</p>
       </div>
    </footer>
 
@@ -88,19 +88,33 @@
  </ul> -->
  
  <!-- Code provided by Google -->
- <div id="google_translate_element"></div>
- <script src="js/jquery-2.1.4.js"></script>
+<!-- Code provided by Google -->
+<div id="google_translate_element"></div>
+<script src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 
- <script type="text/javascript">
-   function googleTranslateElementInit() {
-     new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
-   }
- </script>
- <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
- 
+<!-- Flag click handler -->
+<script type="text/javascript">
+    $('.top_listing .dropdown a').click(function() {
+      var lang = $(this).data('lang');
+      var $frame = $('.goog-te-menu-frame:first');
+      if (!$frame.size()) {
+        alert("Error: Could not find Google translate frame.");
+        return false;
+      }
+      $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
+      return false;
+    });
+</script>
 
 
  <!-- Flag click handler -->
+
   <script src="js/fancybox.js"></script> 
 
 <script src="js/font-awesome.js" crossorigin="anonymous"></script>
@@ -113,20 +127,6 @@
 <script src="js/custom.js"></script>
 <script src="js/wheelspin_custom.js"></script>    
 
-<script type="text/javascript">
- $(document).ready(function () {
-     $('.dropdown a').click(function() {
-       var lang = $(this).data('lang');
-       var $frame = $('.goog-te-menu-frame:first');
-       if (!$frame.size()) {
-         alert("Error: Could not find Google translate frame.");
-         return false;
-       }
-       $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
-       return false;
-     });
-   });
- </script>
  <script>
   $( function() {
     $( "#accordion" ).accordion();

@@ -43,8 +43,18 @@
                         <div class="dropdown-menu bg-blue" aria-labelledby="dropdownMenuButton">
 
                            <a href="#" class="english dropdown-item notranslate" data-lang="English">English</a>
-                           <a href="#" class="spanish dropdown-item notranslate" data-lang="Spanish">Spanish</a>
-                           <a href="#" class="german dropdown-item notranslate" data-lang="German">German</a>
+                           <a href="#" class="spanish dropdown-item notranslate" data-lang="Hindi">Hindi</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Punjabi">Punjabi</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Bengali">Bengali</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Marathi">Marathi</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Telugu">Telugu</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Tamil">Tamil</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Kannada">Kannada</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Odia">Odia</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Gujarati">Gujarati</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Malayalam">Malayalam</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Santali">Santali</a>
+                           <a href="#" class="german dropdown-item notranslate" data-lang="Sanskrit">Sanskrit</a>
                         </div>
                      </div>
 
@@ -119,23 +129,50 @@
          <div class="side-menu">
             <button class="btn cross p-0"><i class="fas fa-times text-white"></i></button>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-               <li class="nav-item active">
-                  <a class="nav-link" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Why Investo <span class="sr-only">(current)</span></a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" href="#">Action</a>
-                     <a class="dropdown-item" href="#">Another action</a>
-                     <div class="dropdown-divider"></div>
-                     <a class="dropdown-item" href="#">Something else here</a>
+               <li class="nav-item active ">
+                  <a class="nav-link" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Why Investo <i class="fas fa-angle-down"></i></a>
+                  <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="advantage.php">Advantages</a>
+                     <a class="dropdown-item" href="product_page.php">Products</a>
+                     <a class="dropdown-item" href="security.php">Security of Funds</a>
+                     <a class="dropdown-item" href="images/invetotrade_Term_and_Conditions.pdf">Terms and Condition</a>
                   </div>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="#">Trading Platform </a>
+                  
                </li>
                <li class="nav-item">
-                  <a class="nav-link " href="#">FX Trading </a>
+                  <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FX Trading <i class="fas fa-angle-down"></i></a>
+                   <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="type_of_account.php">Account</a>
+                        <a class="dropdown-item" href="spreads.php">Spreads</a>
+                     </div>
                </li>
                <li class="nav-item">
-                  <a class="nav-link " href="product_page.php">Fx Education</a>
+                  <a class="nav-link " href="product_page.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partnership <i class="fas fa-angle-down"></i></a>
+                  <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="introducing_broker.php">Introducing Broker</a>
+                     <a class="dropdown-item" href="white_label.php">White Label Partnership</a>
+                     <a class="dropdown-item" href="regional_representative.php">Regional Representative</a>
+                     <a class="dropdown-item" href="multilabel-affiliate-programme.php"> Multilabel Affiliate Programme</a>
+                     <a class="dropdown-item" href="become_partners.php">  Become a Partner</a>
+                     
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link " href="product_page.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fx Education <i class="fas fa-angle-down"></i></a>
+                  <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="trading_principal.php">Trading Principles</a>
+                     <a class="dropdown-item" href="forex_basics.php">Forex Basics</a>
+                     <a class="dropdown-item" href="different_forex.php">Different Forex Trading Strategies</a>
+                     <a class="dropdown-item" href="forex_strategy.php">What is Forex Trading Strategy?</a>
+                     <a class="dropdown-item" href="forex_best.php">Best Strategy for you</a>
+                     <a class="dropdown-item" href="glossary.php">Glossary</a>
+                     <a class="dropdown-item" href="market_hours.php">Market Hours</a>
+                     <a class="dropdown-item" href="trading_process.php">Trading Process</a>
+                   
+                  </div>
                </li>
                <li class="nav-item">
                   <a class="nav-link " href="contact_us.php">Contact Us </a>

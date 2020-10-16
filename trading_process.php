@@ -8,7 +8,14 @@
    </div>
 </section>
 <section class="equal-p">
-   <div class="container">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-3">
+            <div class="product-image mb-3">
+               <img src="images/banner_inner.jpg" class="img-reponsive" />
+            </div>
+         </div>
+     <div class="col-md-6">
 <ul id="component-tab-left" class="uk-switcher">
    <li class="" >     
       <h2 class="text-blue font-700"> <span>TRADING PROCESS</span></h2>
@@ -146,20 +153,11 @@
         </li>
        
       </ul>
-      <ul class="inner_list">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+   </div>
+   <div class="col-md-3">
+      <?php  include'trade_chart.php' ?>
+   </div>
+</div>
    </div>
 </section>
 

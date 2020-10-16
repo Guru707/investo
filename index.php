@@ -311,73 +311,77 @@
          <h2 class="text-white font-800 text-center pb-5">Benefits of Investo Uni Trade </h2>
          <div class="row">
             <div class="col-md-4">
-               <div class="box-wrap-element ">
-                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
+               <div class="box-wrap-element ">                
                   <div class="box-wrap-block">
+                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
                      <h4 class="box-wrap-heading mb-0">Extra 100%</h4>
                      <p>Get an extra 100% on each deposit made to your trading account.</p>
-                     <a href="#"> Open Account <i class="fas fa-caret-right"></i></a>
+                     <!-- <a href="#"> Open Account <i class="fas fa-caret-right"></i></a> -->
                   </div>
                </div>             
             </div>
             <div class="col-md-4">             
-               <div class="box-wrap-element">
-                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
+               <div class="box-wrap-element">                 
                   <div class="box-wrap-block">
+                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
                      <h4 class="box-wrap-heading mb-0">Minimum Trade Account</h4>
                      <p>Minimum Deposit of $100. Start your Trade Journey with minimum investments.</p>
-                     <a href="#"> Open Account <i class="fas fa-caret-right"></i></a>
+                     <!-- <a href="#"> Open Account <i class="fas fa-caret-right"></i></a> -->
                   </div>
                </div>
             </div>
             <div class="col-md-4">
                <div class="box-wrap-element">
-                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
+                
                   <div class="box-wrap-block">
+                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
                      <h4 class="box-wrap-heading mb-0">Free Forex Training </h4>
                      <p>Get an extra 100% on each deposit made to your trading account. 
                      </p>
-                     <a href="#"> Open Account <i class="fas fa-caret-right"></i></a>
+                     <!-- <a href="#"> Open Account <i class="fas fa-caret-right"></i></a> -->
                   </div>
                </div>
             </div>
 
             <div class="col-md-4">              
                <div class="box-wrap-element">
-                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
+                 
                   <div class="box-wrap-block">
+                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
                      <h4 class="box-wrap-heading mb-0">Dedicated Account Manager</h4>
                      <p>Minimum Deposit of $100. Start your Trade Journey with minimum investments.
                      </p>
-                     <a href="#"> Open Account <i class="fas fa-caret-right"></i></a>
+                     <!-- <a href="#"> Open Account <i class="fas fa-caret-right"></i></a> -->
                   </div>
                </div>
             </div>
             <div class="col-md-4">
                <div class="box-wrap-element">
-                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
+                
                   <div class="box-wrap-block">
+                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
                      <h4 class="box-wrap-heading mb-0">Fast Withdrawal</h4>
                      <p>Afraid of the Withdrawl process? Get fast & easy withdrawal from your trading account. Withdrawal within 24 hours.</p>
-                     <a href="#"> Open Account <i class="fas fa-caret-right"></i></a>
+                     <!-- <a href="#"> Open Account <i class="fas fa-caret-right"></i></a> -->
                   </div>
                </div>
             </div>           
            
             <div class="col-md-4">              
                <div class="box-wrap-element">
-                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
+                
                   <div class="box-wrap-block">
+                  <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
                      <h4 class="box-wrap-heading mb-0">Exclusive Gifts</h4>
                      <p>Every trader gets an exclusive gift with a minimum deposit of $100.
                      </p>
-                     <a href="#"> Open Account <i class="fas fa-caret-right"></i></a>
+                     <!-- <a href="#"> Open Account <i class="fas fa-caret-right"></i></a> -->
                   </div>
                </div>
             </div>
@@ -488,6 +492,35 @@
     </div>
 </div>
 </div>
+<section class="manangment-element">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="box-wrap ">
+                  <div class=" "> <i class="fas fa-retweet icon-wrap"></i>
+                  </div>
+                  <h4 class="text-white">Merchandise </h4>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="box-wrap">
+                  <div class=""><i class="fas fa-user-alt icon-wrap"></i>
+                  </div>
+                  <h4 class="text-white">Meet The <span class="d-block">Experts</span></h4>
+                  
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="box-wrap">
+                  <div class=""><i class="fas fa-chart-line icon-wrap"></i>
+                  </div>
+                  <h4 class="text-white">Simple & Convenient, <span class="d-block">The best Forex Trading Platform.</span></h4>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
 <?php 
    include'footer.php'
 ?>

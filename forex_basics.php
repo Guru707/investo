@@ -8,8 +8,15 @@
    </div>
 </section>
 <section class="equal-p">
-   <div class="container-small">
-      <div class="mb-5">
+   <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-3">
+         <div class="product-image mb-3">
+            <img src="images/banner_inner.jpg" class="img-reponsive" />
+         </div>
+      </div>
+      <div class="col-md-6">
+            <div class="mb-5">
          <p>All traders, who joined Forex, seek to reach best results. However, to trade with profit, traders need to know and follow some Forex principles.
          </p>
       </div>
@@ -201,6 +208,11 @@
        
       </div> -->
       <!-- end row -->
+      </div>
+      <div class="col-md-3">
+         <?php  include'trade_chart.php' ?>
+      </div>
+      </div>
    </div>
 </section>
 
