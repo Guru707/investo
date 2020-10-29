@@ -315,7 +315,7 @@
                   <div class="box-wrap-block">
                   <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
-                     <h4 class="box-wrap-heading mb-0">Extra 100%</h4>
+                     <h4 class="box-wrap-heading mb-0">Get 100% More</h4>
                      <p>Get an extra 100% on each deposit made to your trading account.</p>
                      <!-- <a href="#"> Open Account <i class="fas fa-caret-right"></i></a> -->
                   </div>
@@ -339,7 +339,7 @@
                   <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
                      <h4 class="box-wrap-heading mb-0">Free Forex Training </h4>
-                     <p>Get an extra 100% on each deposit made to your trading account. 
+                     <p>Get online forex training from experts. Learn to trade with ease from the comfort of your home
                      </p>
                      <!-- <a href="#"> Open Account <i class="fas fa-caret-right"></i></a> -->
                   </div>
@@ -353,7 +353,7 @@
                   <figure class="box-figure"><img src="images/money.jpg" class="img-responsive" alt="money"></figure>
                      <div class="box-wrap-icon"><img src="images/icon-1.png" alt="icon"></div>
                      <h4 class="box-wrap-heading mb-0">Dedicated Account Manager</h4>
-                     <p>Minimum Deposit of $100. Start your Trade Journey with minimum investments.
+                     <p>Get a personal account manager & get the necessary tips as well as assistance that allows you to gain the profit with ease..
                      </p>
                      <!-- <a href="#"> Open Account <i class="fas fa-caret-right"></i></a> -->
                   </div>
